@@ -1,0 +1,17 @@
+.flow-ty-1 {
+    animation: flow 1s linear infinite alternate;
+}
+.heart-animate {
+    animation: heart-move 2s ease infinite alternate;
+}
+
+@keyframes flow {
+    to {
+        transform: translateY(20px);
+    }
+}
+@keyframes heart-move {
+    to {
+        transform: rotateZ(10deg) translate(130px, -30px) translateX(-150px);
+    }
+}
