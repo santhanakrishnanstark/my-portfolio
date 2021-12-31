@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+
+.container {
+  padding: 0px 20px;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+body, p {
+  color: #333;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+/* font css */
+.ff-caveat {
+  font-family: 'Caveat', cursive;
+}
+.ff-lato-bold {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+.ff-lato-regular {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.ff-lato-black {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+.fs-2 {
+  font-size: 2em;
+}
+
+/* text css */
+.text-primary {
+  color: #e91e63;
+}
+
+/* button css */
+.btn {
+  border: none;
+  font-family: 'Lato';
+  font-weight: 700;
+  padding: 0.8rem 2.5rem;
+  font-size: 1.2em;
+  border-radius: 4px;
+}
+.primary-btn {
+  color: #fff;
+  background-color: #f50057;
+}
+.primary-btn:hover {
+  box-shadow: 2px 2px 20px 0px #d4ced0;
+}
+.btn-cta {
+  position: relative;
+  transition: all 500ms ease;
+}
+.btn-cta::after {
+  content: '\2192';
+  display: inline-block;
+  transform: translateX(-17px);
+  transition: all 800ms linear;
+  opacity: 0;
+  position: absolute;
+  font-size: 1.6em;
+  line-height: 1;
+  top: 15%;
+}
+.btn-cta:hover {
+  padding-right: 4rem;
+}
+.btn-cta:hover:after {
+  opacity: 1;
+  transform: translateX(15px);
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
