@@ -8,7 +8,7 @@ const HeroSection = () => {
                 <div className="row">
                     <div className="col">
                         <h1 className='ff-lato-bold'>Passionate <strong>Frontend Developer</strong> Who create design which brings value to your product</h1>
-                        <a className='btn primary-btn btn-cta' 
+                        <a className='btn primary-btn btn-cta text-white' 
                             href='https://www.linkedin.com/in/santhanakrishnan96/'
                             target='_blank'>Let's Talk</a>
                     </div>
