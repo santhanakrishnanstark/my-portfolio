@@ -58,6 +58,14 @@
         font-size: 2.5em;
         max-width: 705px;
     }
+    .hero-section div.wave {
+        margin-top: -7%;
+        position: relative;
+        z-index: -1;
+    }
+    .hero-section + section {
+        padding-top: 16rem;
+    }
 }
 
 @media (min-width: 1400px) {

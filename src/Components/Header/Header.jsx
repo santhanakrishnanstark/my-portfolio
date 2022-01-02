@@ -1,4 +1,4 @@
-import FeatherLogo from "../FeatherLogo/FeatherLogo";
+import FeatherLogo from "../Svgs/FeatherLogo/FeatherLogo";
 import "./Header.css";
 
 const Header = () => {
@@ -6,9 +6,7 @@ const Header = () => {
     <header>
       <div className="container">
         <div className="brand">
-          <p className="ff-caveat fs-2 ff-bold text-primary brand-name">
-            Sandy Krish
-          </p>
+          <p className="ff-caveat fs-2 ff-bold brand-name">Sandy Krish</p>
           <FeatherLogo />
         </div>
       </div>
