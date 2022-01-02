@@ -76,8 +76,10 @@ button {
 .primary-btn {
   background-color: var(--primary-bg-color);
 }
-.primary-btn:hover {
+.primary-btn:hover,
+.primary-btn:focus {
   box-shadow: 2px 2px 20px 0px #d4ced0;
+  outline: none;
 }
 .fill-primary {
   fill: var(--primary-bg-color);
@@ -97,12 +99,19 @@ button {
   line-height: 1;
   top: 15%;
 }
-.btn-cta:hover {
+.btn-cta:hover,
+.btn-cta:focus {
   padding-right: 4rem;
 }
-.btn-cta:hover:after {
+.btn-cta:hover:after,
+.btn-cta:focus:after {
   opacity: 1;
   transform: translateX(15px);
+}
+/* keyboard accessibility */
+.btn-cta:focus-visible {
+  outline: 2px solid var(--primary-bg-color);
+  outline-offset: 3px;
 }
 
 img,

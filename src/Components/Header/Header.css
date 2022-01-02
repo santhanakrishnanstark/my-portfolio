@@ -1,0 +1,41 @@
+.brand {
+    display: flex;
+}
+.brand .brand-name {
+    color: transparent;
+    margin-right: 20px;
+    animation: change-color 0s 1s linear forwards;
+}
+.brand svg {
+    height: 70px;
+    animation: feather-scale 1s ease-out forwards;
+    transform: translate(0%, 0%);
+}
+.brand svg * {
+    fill: #135313;
+}
+
+@keyframes feather-scale {
+    0% {
+        transform: scale(0.1);
+    }
+    50% {
+        transform: scale(1) rotate(20deg) translate(-12px, 12px);
+    }
+    70% {
+        transform: scale(1) rotate(-30deg) translate(-12px, 12px);
+    }
+    80% {
+        transform: scale(1) rotate(30deg)translate(-12px, 12px);
+    }
+    100% {
+        transform: scale(1) rotate(20deg) translate(-12px, 12px);
+    }
+}
+
+@keyframes change-color {
+    100% {
+        color: var(--primary-bg-color);
+        font-weight: 900;
+    }
+}
