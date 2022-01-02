@@ -1,0 +1,13 @@
+.brand {
+    display: flex;
+}
+.brand .brand-name {
+    margin-right: 20px;
+}
+.brand svg {
+    transform: rotateZ(20deg) translate(-10px, 18px);
+    height: 70px;
+}
+.brand svg * {
+    fill: #135313;
+}
