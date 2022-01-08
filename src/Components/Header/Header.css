@@ -12,7 +12,8 @@
     transform: translate(0%, 0%);
 }
 .brand svg * {
-    fill: #135313;
+    fill: var(--primary-bg-color);
+    filter: brightness(0.8);
 }
 
 @keyframes feather-scale {
