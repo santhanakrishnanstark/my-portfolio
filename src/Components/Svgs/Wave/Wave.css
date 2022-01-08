@@ -1,9 +1,0 @@
-svg.invert {
-    transform: rotate(180deg);
-}
-svg.normal {
-    transform: translateY(-10px);
-}
-.wave * {
-    fill: var(--primary-bg-color);
-}

@@ -4,7 +4,13 @@
 :root {
   /* --primary-bg-color: #187ac3; */
   /* --primary-bg-color: #f4ee98; */
-  --primary-bg-color: #34b534;
+  /* --primary-bg-color: #34b534; */
+  --primary-bg-color: #0099ff;
+  --secondary-text-color: #767676;
+  --text-white: #fff;
+
+  --font-primary: 'Lato', sans-serif;
+  --font-cursive: 'Caveat', cursive;
 }
 
 .container {
@@ -26,6 +32,7 @@
 
 body, p {
   color: #333;
+  font-family: var(--font-primary);
 }
 a {
   text-decoration: none;
@@ -35,18 +42,18 @@ button {
 }
 /* font css */
 .ff-caveat {
-  font-family: 'Caveat', cursive;
+  font-family: var(--font-cursive);
 }
 .ff-lato-bold {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--font-primary);
   font-weight: 700;
 }
 .ff-lato-regular {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--font-primary);
   font-weight: 400;
 }
 .ff-lato-black {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--font-primary);
   font-weight: 900;
 }
 .fs-2 {
@@ -59,6 +66,9 @@ button {
 /* text css */
 .text-primary {
   color: var(--primary-bg-color);
+}
+.text-secondary {
+  color: var(--secondary-text-color);
 }
 .text-white {
   color: #fff;
@@ -75,6 +85,7 @@ button {
 }
 .primary-btn {
   background-color: var(--primary-bg-color);
+  color: var(--text-white);
 }
 .primary-btn:hover,
 .primary-btn:focus {
