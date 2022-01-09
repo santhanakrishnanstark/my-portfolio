@@ -1,0 +1,17 @@
+.construction .card-wrapper {
+    flex-direction: column;
+    align-items: center;
+}
+.construction svg {
+    width: 80vh;
+}
+.construction p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.construction .section-title {
+    margin-bottom: 0px;
+}
+.construction .primary-btn {
+    margin-top: 3rem;
+}

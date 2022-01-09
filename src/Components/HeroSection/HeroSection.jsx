@@ -12,13 +12,14 @@ const HeroSection = () => {
               which brings value to your product
             </h1>
             <p className="text-secondary description">
-              Hi There! &#128075; I am Santhanakrishnan, I design & code
+              Hi There &#128075; I am Santhanakrishnan, I design & code
               beautiful simple things, and I love what I do.
             </p>
             <a
               className="btn primary-btn btn-cta text-white"
               href="https://www.linkedin.com/in/santhanakrishnan96/"
               target="_blank"
+              rel="noreferrer"
             >
               Let's Talk
             </a>

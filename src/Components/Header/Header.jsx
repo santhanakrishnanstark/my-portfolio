@@ -1,13 +1,61 @@
-import FeatherLogo from "../Svgs/FeatherLogo/FeatherLogo";
 import "./Header.css";
 
+import Profile from "../../Assets/sandyspecpic.jpg";
+import { useEffect, useState } from "react";
+import AudioFile from "../../Assets/themechange.mp3";
+
 const Header = () => {
+  const [checkedValue, setCheckedValue] = useState("default");
+  const audio = new Audio(AudioFile);
+
+  useEffect(() => {
+    // set default page theme
+    document.querySelector("body").classList.add("default");
+  }, []);
+
+  useEffect(() => {
+    // change page theme
+    document.querySelector("body").className = "";
+    document.querySelector("body").classList.add(checkedValue);
+  }, [checkedValue]);
+
+  const handleChange = (value) => {
+    setCheckedValue(value);
+
+    // play audio
+    audio.play();
+  };
+
   return (
     <header>
       <div className="container">
-        <div className="brand">
+        <a href="/" className="brand">
+          <img src={Profile} alt="profile-pic" className="profile-pic" />
           <p className="ff-caveat fs-2 ff-bold brand-name">Sandy Krish</p>
-          <FeatherLogo />
+        </a>
+        <div className="theme-menu">
+          <ul>
+            <li>
+              <input
+                type="radio"
+                name="theme-color"
+                id="pink"
+                value="default"
+                checked={checkedValue === "default" ? true : false}
+                onChange={(e) => handleChange(e.target.value)}
+              />
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="theme-color"
+                id="blue"
+                value="blue"
+                checked={checkedValue === "blue" ? true : false}
+                onChange={(e) => handleChange(e.target.value)}
+              />
+            </li>
+          </ul>
         </div>
       </div>
     </header>
