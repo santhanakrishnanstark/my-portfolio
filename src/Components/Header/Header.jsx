@@ -30,7 +30,13 @@ const Header = () => {
     <header>
       <div className="container">
         <a href="/" className="brand">
-          <img src={Profile} alt="profile-pic" className="profile-pic" />
+          <img
+            src={Profile}
+            alt="profile-pic"
+            className="profile-pic"
+            width="50"
+            height="50"
+          />
           <p className="ff-caveat fs-2 ff-bold brand-name">Sandy Krish</p>
         </a>
         <div className="theme-menu">
@@ -41,6 +47,7 @@ const Header = () => {
                 name="theme-color"
                 id="pink"
                 value="default"
+                aria-label="theme pink"
                 checked={checkedValue === "default" ? true : false}
                 onChange={(e) => handleChange(e.target.value)}
               />
@@ -51,6 +58,7 @@ const Header = () => {
                 name="theme-color"
                 id="blue"
                 value="blue"
+                aria-label="theme blue"
                 checked={checkedValue === "blue" ? true : false}
                 onChange={(e) => handleChange(e.target.value)}
               />
