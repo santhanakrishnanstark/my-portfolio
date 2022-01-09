@@ -1,42 +1,79 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .brand {
     display: flex;
+    align-items: center;
 }
 .brand .brand-name {
-    color: transparent;
+    color: var(--primary-bg-color);
     margin-right: 20px;
-    animation: change-color 0s 1s linear forwards;
 }
-.brand svg {
-    height: 70px;
-    animation: feather-scale 1s ease-out forwards;
-    transform: translate(0%, 0%);
+.brand .profile-pic {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 50%;
 }
-.brand svg * {
-    fill: var(--primary-bg-color);
-    filter: brightness(0.8);
+header .theme-menu ul {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
 }
-
-@keyframes feather-scale {
-    0% {
-        transform: scale(0.1);
-    }
-    50% {
-        transform: scale(1) rotate(20deg) translate(-12px, 12px);
-    }
-    70% {
-        transform: scale(1) rotate(-30deg) translate(-12px, 12px);
-    }
-    80% {
-        transform: scale(1) rotate(30deg)translate(-12px, 12px);
-    }
-    100% {
-        transform: scale(1) rotate(20deg) translate(-12px, 12px);
-    }
+.theme-menu input[type="radio"] {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
 }
-
-@keyframes change-color {
-    100% {
-        color: var(--primary-bg-color);
-        font-weight: 900;
-    }
+.theme-menu input[type="radio"]::after {
+    content: '';
+    background-color: var(--secondary-bg-color);
+    position: absolute;
+    width: 102%;
+    height: 102%;
+    border-radius: 50%;
+    transform: translate(-2%, -2%);
+}
+.theme-menu input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 30%;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    z-index: 1;
+    left: 45%;
+    top: 40%;
+    transform: translate(-50%, -50%) rotate(-50deg);
+}
+.theme-menu input[type="radio"]:checked:after {
+    outline: 2px solid;
+}
+.theme-menu input[type="radio"]:focus {
+    outline: none;
+}
+.theme-menu input[type="radio"]:focus-visible::after {
+    outline: 2px solid;
+    outline-offset: 3px;
+}
+.theme-menu #pink::after {
+    background-color: #E91E63;
+}
+.theme-menu #blue::after {
+    background-color: #0099ff;
+}
+.theme-menu input[type="radio"]::after,
+.theme-menu input[type="radio"]::before {
+    pointer-events: none;
 }

@@ -1,0 +1,24 @@
+.section {
+    padding: 2.5em 0px;
+}
+.section .section-title {
+    font-size: 2.5em;
+    text-align: center;
+    color: var(--primary-bg-color);
+}
+.section:last-child {
+    padding-bottom: 100px;
+}
+@media (min-width: 1024px) {
+    .card-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .card-wrapper .card {
+        padding: 15px;
+        margin: 15px;
+    }
+    .card-wrapper.three-col-layout .card {
+        max-width: 33%;
+    }
+}
