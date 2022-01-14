@@ -19,6 +19,9 @@
         margin: 15px;
     }
     .card-wrapper.three-col-layout .card {
-        max-width: 33%;
+        width: 33%;
+    }
+    .card-wrapper.two-col-layout .card {
+        width: 49%;
     }
 }

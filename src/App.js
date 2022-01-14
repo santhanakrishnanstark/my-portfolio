@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import Header from './Components/Header/Header';
 import HeroSection from './Components/HeroSection/HeroSection';
+import MyProjects from './Components/MyProjects/MyProjects';
+import SkillsAndExperience from './Components/SkillsAndExperience/SkillsAndExperience';
 import UnderConstruction from './Components/UnderConstruction/UnderConstruction';
 import WIDSection from './Components/WIDSection/WIDSection';
 import WorkProcess from './Components/WorkProcess/WorkProcess';
@@ -13,6 +15,8 @@ function App() {
       <HeroSection />
       <WIDSection />
       <WorkProcess />
+      <SkillsAndExperience />
+      <MyProjects />
       <UnderConstruction />
     </React.Fragment>
   );

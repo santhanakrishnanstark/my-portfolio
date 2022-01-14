@@ -1,0 +1,69 @@
+.skills-experience .card-title {
+    text-align: center;
+}
+.showcase {
+    max-width: 80%;
+    margin: 1.5em auto 0px;
+    position: relative;
+    padding: 30px;
+    border-radius: 10px;
+}
+.showcase .panel {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    perspective: 1000px;
+    margin-bottom: 1em;
+}
+.showcase .panel::after,
+.showcase::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 0px;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 90px #ddd;
+    transform: skewX(0deg) rotateX(72deg);
+    transform-style: preserve-3d;
+}
+.showcase::before {
+    width: 30px;
+    height: 100%;
+    box-shadow: 0px 0px 90px #ddd;
+    transform: skewX(0deg) rotateX( 45deg);
+}
+.timeline {
+    padding: 30px;
+    max-width: 80%;
+    margin: 1.5em auto 0px;
+    position: relative;
+}
+.timeline::before {
+    content: '';
+    width: 2px;
+    height: calc(100% - 100px);
+    border-left: 2px dashed var(--primary-bg-color);
+    position: absolute;
+    left: 15px;
+    top: 60px;
+}
+.timeline > li {
+    position: relative;
+    padding-left: 15px;
+    list-style-type: none;
+}
+.timeline li::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -24px;
+    top: 15px;
+    transform: translateY(-50%);
+    background: #fff;
+    border-radius: 50%;
+    border: 2px dashed var(--primary-bg-color);
+}
