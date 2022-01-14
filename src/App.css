@@ -47,9 +47,13 @@ body, p {
 }
 a {
   text-decoration: none;
+  color: var(--primary-bg-color);
 }
 button {
   cursor: pointer;
+}
+h4 {
+  margin: 0px;
 }
 /* font css */
 .ff-caveat {
@@ -83,6 +87,9 @@ button {
 }
 .text-white {
   color: #fff;
+}
+.text-muted {
+  color: var(--secondary-text-color);
 }
 
 /* button css */
