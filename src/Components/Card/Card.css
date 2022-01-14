@@ -6,7 +6,6 @@
 .card .card-title {
     margin: 0;
     font-size: 1.5em;
-    display: inline-block;
 }
 .card svg {
     height: 100px;
