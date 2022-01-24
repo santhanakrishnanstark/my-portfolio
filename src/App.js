@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import GetInTouch from './Components/GetInTouch/GetInTouch';
 import Header from './Components/Header/Header';
 import HeroSection from './Components/HeroSection/HeroSection';
 import MyProjects from './Components/MyProjects/MyProjects';
@@ -17,7 +18,8 @@ function App() {
       <WorkProcess />
       <SkillsAndExperience />
       <MyProjects />
-      <UnderConstruction />
+      <GetInTouch />
+      {/* <UnderConstruction /> */}
     </React.Fragment>
   );
 }
