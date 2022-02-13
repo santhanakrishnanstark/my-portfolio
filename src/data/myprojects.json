@@ -1,13 +1,14 @@
 [
+    
     {
-        "projectName": "TODO App",
+        "projectName": "ATS Kanban Board",
         "image": {
             "src": "",
             "alt": ""
         },
-        "description": "A React based Todo Application which is worked on local storage on your browser so you can use this application freely",
-        "techStack": ["HTML", "CSS", "Javascript", "React", "localStorage"],
-        "projectURL": "https://my-todo-check.netlify.app/"
+        "description": "Kanban board for Job Recruitment where HR can able to process and manage 1000+ candidates easily",
+        "techStack": ["React", "React Router", "React Material UI", "React Beautiful DnD"],
+        "projectURL": "https://ats-board.herokuapp.com/"
     },
     {
         "projectName": "Meal Maker",
@@ -20,13 +21,13 @@
         "projectURL": "https://santhanakrishnanstark.github.io/mealmaker/"
     },
     {
-        "projectName": "My First Portfolio",
+        "projectName": "TODO App",
         "image": {
             "src": "",
             "alt": ""
         },
-        "description": "This is my first portfolio built while I was learning React js.",
-        "techStack": ["HTML", "CSS", "Javascript", "React", "React Router", "Firebase"],
-        "projectURL": "https://sandyseeker.herokuapp.com/"
+        "description": "A React based Todo Application which is worked on local storage on your browser so you can use this application freely",
+        "techStack": ["HTML", "CSS", "Javascript", "React", "localStorage"],
+        "projectURL": "https://my-todo-check.netlify.app/"
     }
 ]
