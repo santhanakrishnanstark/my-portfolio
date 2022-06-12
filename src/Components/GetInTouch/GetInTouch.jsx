@@ -67,15 +67,11 @@ const GetInTouch = () => {
               cols="30"
               rows="10"
               placeholder="Your message"
-              id="message"
               required
             ></textarea>
-            <input
-              type="submit"
-              name="submit"
-              value="Send Message"
-              ref={submitBtn}
-            />
+            <button type="submit" name="submit" ref={submitBtn}>
+              Send Message
+            </button>
           </form>
         </Card>
       </div>
