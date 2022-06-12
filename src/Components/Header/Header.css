@@ -1,7 +1,7 @@
 header {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 5;
     background: #fff;
 }
 header .container {
@@ -65,11 +65,12 @@ header .theme-menu ul {
     outline: 2px solid;
     outline-offset: 3px;
 }
-.theme-menu #pink::after {
+.theme-menu #light::after {
     background-color: #E91E63;
 }
-.theme-menu #blue::after {
-    background-color: #0099ff;
+.theme-menu #dark::after {
+    background-color: #000;
+    outline: 2px solid #fff;
 }
 .theme-menu input[type="radio"]::after,
 .theme-menu input[type="radio"]::before {

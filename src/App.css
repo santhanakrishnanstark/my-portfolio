@@ -17,8 +17,19 @@
 
 /* page theme change css */
 
-body.blue {
-  --primary-bg-color: #0099ff;
+body.dark {
+  background-color: #000;
+  color: #fff;
+}
+body.dark header {
+  background-color: #000;
+}
+body.dark p {
+  color: #ccc;
+}
+body.dark .hero-section::after,
+body.dark .workflow .card {
+  background-color: #272727;
 }
 
 .container {
