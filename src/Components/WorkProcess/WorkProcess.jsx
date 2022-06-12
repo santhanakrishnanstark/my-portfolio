@@ -23,11 +23,11 @@ const WorkProcess = () => {
             ready to design.
           </p>
         </Card>
-        <Card title="Prototype">
-          <p>I create high precision design and prototype the screens.</p>
-        </Card>
         <Card title="Implement">
           <p>After conception, I deliver to the implementation.</p>
+        </Card>
+        <Card title="Prototype">
+          <p>I create high precision design and prototype the screens.</p>
         </Card>
       </div>
     </Section>

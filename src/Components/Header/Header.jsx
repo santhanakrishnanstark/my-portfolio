@@ -45,9 +45,9 @@ const Header = () => {
               <input
                 type="radio"
                 name="theme-color"
-                id="pink"
+                id="light"
                 value="default"
-                aria-label="theme pink"
+                aria-label="theme light"
                 checked={checkedValue === "default" ? true : false}
                 onChange={(e) => handleChange(e.target.value)}
               />
@@ -56,10 +56,10 @@ const Header = () => {
               <input
                 type="radio"
                 name="theme-color"
-                id="blue"
-                value="blue"
-                aria-label="theme blue"
-                checked={checkedValue === "blue" ? true : false}
+                id="dark"
+                value="dark"
+                aria-label="theme dark"
+                checked={checkedValue === "dark" ? true : false}
                 onChange={(e) => handleChange(e.target.value)}
               />
             </li>

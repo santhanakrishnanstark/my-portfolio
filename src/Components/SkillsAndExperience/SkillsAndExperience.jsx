@@ -1,5 +1,27 @@
 import Card from "../Card/Card";
 import Section from "../SectionLayout/Section";
+import {
+  ANGULAR_ICON,
+  BOOTSTRAP_ICON,
+  CSS_ICON,
+  D3_ICON,
+  FIGMA_ICON,
+  FIREBASE_ICON,
+  GATSBY_ICON,
+  GIT_ICON,
+  GULP_ICON,
+  HTML_ICON,
+  JAVASCRIPT_ICON,
+  JQUERY_ICON,
+  LESS_ICON,
+  MATERIAL_ICON,
+  NPM_ICON,
+  REACT_ICON,
+  REDUX_ICON,
+  SASS_ICON,
+  TYPESCRIPT_ICON,
+  VSCODE_ICON,
+} from "../Svgs/LanguageSvgs/IconList";
 import "./SkillsAndExperience.css";
 
 const SkillsAndExperience = () => {
@@ -9,25 +31,32 @@ const SkillsAndExperience = () => {
         <Card title="Skills">
           <div className="showcase">
             <div className="panel">
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>Javascript</p>
+              <HTML_ICON />
+              <CSS_ICON />
+              <JAVASCRIPT_ICON />
+              <LESS_ICON />
+              <SASS_ICON />
             </div>
             <div className="panel">
-              <p>Bootstrap</p>
-              <p>jQuery</p>
-              <p>LESS</p>
-              <p>SASS</p>
+              <JQUERY_ICON />
+              <GULP_ICON />
+              <BOOTSTRAP_ICON />
+              <MATERIAL_ICON />
             </div>
             <div className="panel">
-              <p>React</p>
-              <p>Redux</p>
-              <p>Angular</p>
+              <REACT_ICON />
+              <GATSBY_ICON />
+              <REDUX_ICON />
+              <ANGULAR_ICON />
+              <TYPESCRIPT_ICON />
+              <D3_ICON />
             </div>
             <div className="panel">
-              <p>GIT</p>
-              <p>Gulp</p>
-              <p>Figma</p>
+              <FIREBASE_ICON />
+              <NPM_ICON />
+              <GIT_ICON />
+              <VSCODE_ICON />
+              <FIGMA_ICON />
             </div>
           </div>
         </Card>

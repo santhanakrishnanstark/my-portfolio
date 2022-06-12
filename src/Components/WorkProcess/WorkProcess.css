@@ -20,5 +20,39 @@
     .workflow .card {
         display: inline-block;
         max-width: 300px;
+        position: relative;
+    }
+
+    .workflow .card::after {
+        content: '';
+        width: 138px;
+        height: 33px;
+        display: block;
+        background-image: url(../../Assets/arrow-right.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        position: absolute;
+        right: -118px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    .workflow .card:nth-child(3)::after {
+        background-image: url(../../Assets/arrow-down.svg);
+        width: 33px;
+        right: 140px;
+        transform: scale(3) translateY(57px) rotate(25deg);
+        height: 80px;
+        z-index: -1;
+    }
+
+    .workflow .card:nth-child(4)::after {
+        background-image: url(../../Assets/arrow-left.svg);
+    }
+
+    .workflow .card:nth-child(5)::after {
+        display: none;
     }
 }

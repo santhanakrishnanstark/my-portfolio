@@ -8,8 +8,8 @@ const HeroSection = () => {
         <div className="row">
           <div className="col left">
             <h1 className="ff-lato-bold">
-              Passionate <strong>Frontend Developer</strong> Who create design
-              which brings value to your product
+              Passionate <strong>Frontend Developer</strong> Who creates a
+              design that brings value to your product.
             </h1>
             <p className="text-secondary description">
               Hi There &#128075; I am Santhanakrishnan, I design & code
