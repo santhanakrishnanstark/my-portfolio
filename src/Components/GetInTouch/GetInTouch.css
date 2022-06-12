@@ -22,13 +22,13 @@
     font-weight: 700;
 }
 
-.get-in-touch form input[type="submit"] {
+.get-in-touch form button[type="submit"] {
     background-color: var(--primary-bg-color);
     color: #fff;
     cursor: pointer;
 }
 
-.get-in-touch form input[type="submit"]:disabled {
+.get-in-touch form button[type="submit"]:disabled {
     opacity: 0.7;
 }
 
